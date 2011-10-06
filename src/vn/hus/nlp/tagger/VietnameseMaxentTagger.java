@@ -15,6 +15,7 @@ import org.apache.commons.cli.PosixParser;
 import vn.hus.nlp.tagger.io.IOutputer;
 import vn.hus.nlp.tagger.io.PlainOutputer;
 import vn.hus.nlp.tagger.io.XMLOutputer;
+import vn.hus.nlp.tokenizer.Tokenizer;
 import vn.hus.nlp.tokenizer.VietTokenizer;
 import vn.hus.nlp.utils.UTF8FileUtility;
 import edu.stanford.nlp.ling.WordTag;
@@ -36,7 +37,7 @@ public class VietnameseMaxentTagger {
 	/**
 	 * The underlying tokenizer
 	 */
-	private static VietTokenizer tokenizer = null;
+	private static Tokenizer tokenizer = null;
 
 	/**
 	 * The maxent tagger.
@@ -207,9 +208,9 @@ public class VietnameseMaxentTagger {
 	 * Gets the Vietnamese tokenizer.
 	 * @return the tokenizer
 	 */
-	public static VietTokenizer getTokenizer() {
+	public static Tokenizer getTokenizer() {
 		if (tokenizer == null) {
-			tokenizer = new VietTokenizer();
+			tokenizer = new AutomataTokenizer();
 		}
 		return tokenizer;
 	}

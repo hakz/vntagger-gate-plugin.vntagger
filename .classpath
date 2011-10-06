@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src"/>
+	<classpathentry excluding="vn/hus/nlp/tagger/VietnameseMaxentTagger.java|vn/hus/nlp/tagger/VietnameseMaxentTaggerProvider.java|vn/hus/nlp/tagger/test/VietnameseTaggerTest.java" kind="src" path="src"/>
 	<classpathentry kind="lib" path="lib/commons-cli-1.2.jar"/>
-	<classpathentry kind="lib" path="lib/edu.stanford.nlp.tagger-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/edu.stanford.nlp.tagger-2.0.jar" sourcepath="D:/data/home/cumeo89/projects/ePi/stanford-postagger-full-2011-09-14/src"/>
 	<classpathentry kind="lib" path="lib/vn.hus.nlp.fsm-1.0.0.jar"/>
-	<classpathentry kind="lib" path="lib/vn.hus.nlp.tokenizer-4.1.1.jar"/>
 	<classpathentry kind="lib" path="lib/vn.hus.nlp.utils-1.0.0.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/vnTokenizer"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
